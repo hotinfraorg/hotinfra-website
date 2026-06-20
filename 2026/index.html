@@ -64,7 +64,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#speakers">Call for Papers</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#schedule">Program</a></li> -->
+          <li><a class="nav-link scrollto" href="#schedule">Program</a></li>
           <li><a class="nav-link scrollto" href="#program-committee">Program Committee</a></li>
           <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
           <li><a class="nav-link scrollto" href="#past-events">Past Events</a></li>
@@ -219,7 +219,351 @@
     </section><!-- End Speakers Section -->
 
     <!-- ======= Schedule Section ======= -->
-    <!-- <div id="program-include"></div> -->
+    <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Workshop Program</h2>
+          <!-- <p style="color: #0e1b4d; font-size: large;"><b>June 28, 2026, Raleigh, NC, USA</b></p> -->
+          <p style="color: #0e1b4d; font-size: large;"><b>Location: Ballroom A</b></p>
+        </div>
+
+        <!-- Remove "style=display:none" from div below to make it show -->
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+
+          <div role="tabpanel" class="col-lg-12 tab-pane fade show active" id="day-1">
+
+            <!-- <div class="row schedule-item">
+              <div class="col-md-10">
+                <h3><b>Sunday, June 28th</b></h3>
+              </div>
+            </div> -->
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>8:00 AM - 8:10 AM</time></div>
+              <div class="col-md-10">
+                <h4>Opening Remarks</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>8:10 AM - 9:10 AM</time></div>
+              <div class="col-md-10" style="margin-bottom: 15px;">
+                <h4>Keynote I</h4>
+                <h4 class="keynote-title">Title: TBD</h4>
+                <p class="speaker-name"><a href="https://karu.sites.cs.wisc.edu/wiki/">Karu Sankaralingam</a> (NVIDIA &amp; University of Wisconsin-Madison)</p>
+                <br>
+                <p>
+                  <b>Abstract</b>
+                  <br>
+                  TBD
+                </p>
+                <hr>
+                <p>
+                  <b>Bio</b>
+                  <br>
+                  TBD
+                </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>9:10 AM - 10:10 AM</time></div>
+              <div class="col-md-10">
+                <h4>Session 1</h4>
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Beyond Pass/Fail: Evaluating Infrastructure Agents Across Layers, Lifecycle, and Risk</div>
+                          </div>
+                          <div class="paper-authors">Yuan Gao, Zeren Yang, Junnan Li, Shawn (Wanxiang) Zhong (University of Wisconsin-Madison); Ahmed Dajani, Mai Zheng (Iowa State University); Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau (University of Wisconsin-Madison)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Managing modern computing infrastructure has become a steadily harder problem due to the ever-increasing complexity. Recent advances in AI agents create a timely opportunity to automate infrastructure management tasks, but it remains unclear how well such agents can handle real-world infrastructure complexity. We present InfraBench, a benchmark suite for evaluating AI agents on realistic infrastructure tasks across the full system stack and full operational lifecycle with fine-grained risk assessment. Preliminary experiments with seven agent&ndash;model configurations show that even the strongest agent cannot secure a full score across all tasks. The mean scores range from 56.1% to 90.8%, and per-check scoring reveals a general failure pattern: agents may routinely satisfy short-term objectives while leaving non-durable changes, broken distributed invariants, unsafe side effects, and uncleaned state behind.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Decision Locality: A Substrate for AI Inference and Continual Learning</div>
+                          </div>
+                          <div class="paper-authors">Jerry Felix (Brain-CA Technologies, Inc.)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> The dominant AI infrastructure paradigm, built around floating-point matrix engines and dense data movement, is increasingly mismatched to the workloads now driving real deployments: streaming inference, on-device adaptation, and continual learning under tight power and latency budgets. We argue that this mismatch is structural rather than a question of compiler maturity or memory bandwidth. We propose Decision Locality as an alternative organizing principle for AI infrastructure: each decision, the state required to produce it, and the learning update that refines future decisions should be co-located in the smallest local hardware unit that can express them. We instantiate this principle with three concrete artifacts: a hardware-native binary learning primitive whose inference behavior is consistent with Bayesian belief updating using only local state and bit operations; a learner-ensemble fabric that composes these primitives into a streaming classifier with no back-propagation; and an FPGA realization that synthesizes the core unit to 48 LUTs and 8 registers at 96 MHz on a commercial accelerator card. We discuss the infrastructure-level questions this substrate raises, from scheduling and programming-model questions to per-bit energy accounting, and argue that it is best positioned not as a replacement for dense matrix engines but as a complementary substrate for the long tail of inference and continual-learning workloads that increasingly drive total infrastructure cost.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">When the LLM-Tuned Stack Misses: An Infrastructure View of Biological Foundation Model Inference Across NVIDIA and AMD</div>
+                          </div>
+                          <div class="paper-authors">Manpreet Singh (Embedded LLM)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> AI inference infrastructure is increasingly tuned for one workload shape: dense, large-batch, NVIDIA-resident transformer decoding for LLMs. Biological foundation models, including protein language models, long-context genomic transformers, and structure-conditioned binders, do not fit that shape. They run at small batch sizes over short alphabets, attend over 100K+ token sequences, mix transformer blocks with geometric ops, and are increasingly deployed on whatever GPU is available, including AMD MI300X. We report a measurement study of six widely used biological models (ESM-2, ProtBERT, ProteinMPNN, AlphaGenome, Enformer, DualBind) on three GPUs spanning two vendors (NVIDIA L4, H100; AMD MI300X). We show that 60-80% of reference-implementation runtime is spent outside dense compute (in memory-bound element-wise ops, fragmented launches, and in one case a host-device round-trip the upstream code never removed), and that a single Triton kernel source tree closes most of the gap on both vendors without per-vendor forks. The results surface three infrastructure observations: (i) the dominant bottlenecks on bio workloads are different from those LLM stacks are tuned for; (ii) vendor-stack asymmetries amplify trivial systems bugs into order-of-magnitude regressions; and (iii) write-once cross-vendor portability for non-LLM AI workloads is achievable today with off-the-shelf compiler infrastructure.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:10 AM - 10:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Coffee Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:30 AM - 11:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Session 2</h4>
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Safe CPU Oversubscription: One Size Does Not Fit All</div>
+                          </div>
+                          <div class="paper-authors">Jaylen Wang (Carnegie Mellon University); Fiodar Kazhamiaka (Azure Research); Pulkit Misra (Microsoft Research); Daniel Berger (Microsoft Azure &amp; University of Washington); Akshitha Sriraman (Carnegie Mellon University)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Cloud providers oversubscribe CPUs to lower total cost of ownership (TCO) and carbon emissions, packing more virtual processors (VPs) onto a host than its logical processors (LPs) can run at once. Oversubscription introduces CPU Wait Time (CWT), the fraction of time a VP is runnable but unscheduled because no LP is free, which providers must keep below a quality-of-service (QoS) target. To bound CWT, providers and prior work use some form of static cap on host CPU utilization. We measure how CWT scales with host utilization and find that the safe oversubscription limit varies substantially with both <em>platform configuration</em> (the environment a VM runs <em>on</em>, e.g., scheduling constraints and LP pool size) and <em>workload behavior</em> (<em>how</em> a VM uses its VPs): platform-configuration factors shift the limit by up to 2.2&times; and workload-behavior factors by up to 1.5&times;. A single fleet-wide static cap is therefore either overly conservative, forgoing TCO and carbon savings, or unsafe, risking QoS violations; the variability motivates rethinking oversubscription policy, VM placement, and platform design to account for both factor families.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Overdraft: Graceful Handling of ENOSPC in Multi-Tenant Storage Infrastructure</div>
+                          </div>
+                          <div class="paper-authors">Ahmed Dajani, Wei Xu, Mai Zheng (Iowa State University); Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau (University of Wisconsin-Madison)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Handling out-of-space errors remains a persistent challenge for data-intensive applications, often resulting in application crashes and misleading error messages. We present a study showing how applications react poorly to space exhaustion across diverse storage systems, revealing long error chains and inconsistent behavior. Motivated by the study and the dynamic, multi-tenant nature of modern storage infrastructures, we introduce Overdraft, a system that detects, manages, and mitigates storage capacity violations through dynamic space reallocation. Our eBPF-based prototype demonstrates low overhead and seamless integration with local and distributed file systems, enabling efficient thin provisioning while avoiding the reliability pitfalls of out-of-space conditions.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Speculative Load Micro-op Fusion</div>
+                          </div>
+                          <div class="paper-authors">Deepanjali Mishra (Carnegie Mellon University); Tanvir Ahmed Khan (Columbia University in the City of New York); Gilles Pokam (AMD); Heiner Litz (UC Santa Cruz); Akshitha Sriraman (Carnegie Mellon University)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Modern data center applications experience significant backend pipeline stalls, degrading performance and energy efficiency. One promising approach to reduce these stalls is load micro-op pair fusion, where two load micro-ops accessing the same cache line are merged into a single fused micro-op. However, existing approaches require both load micro-ops to be simultaneously visible before fusion can occur, limiting fusion coverage.
+                        </p>
+                        <br>
+                        <p>
+                          We present I-Fuse, a profile-guided speculative load micro-op pair fusion mechanism. I-Fuse consists of two components: (1) profile-guided fusion, which identifies fusible load pairs using dynamic execution profiles, and (2) speculative fusion, which enables fusion when only the first load has been observed.
+                        </p>
+                        <br>
+                        <p>
+                          We evaluate I-Fuse using eight backend-bound data center applications. I-Fuse improves performance by 7.4% over a system without fusion and outperforms the state-of-the-art fusion technique, Helios, by 6.8&times;. I-Fuse achieves 78.9% of ideal speedup on average, and up to 97.9%.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:30 AM - 1:30 PM</time></div>
+              <div class="col-md-10">
+                <h4>Lunch Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>1:30 PM - 2:30 PM</time></div>
+              <div class="col-md-10" style="margin-bottom: 15px;">
+                <h4>Keynote II</h4>
+                <h4 class="keynote-title">KV Cache as the New AI Memory Abstraction</h4>
+                <p class="speaker-name"><a href="https://people.cs.uchicago.edu/~junchenj/">Junchen Jiang</a> (Tensormesh &amp; University of Chicago)</p>
+                <br>
+                <p>
+                  <b>Abstract</b>
+                  <br>
+                  Modern AI agents increasingly operate over long contexts&mdash;reading documents, executing multi-step plans, and maintaining evolving state&mdash;but today's inference engines reprocess this growing context from scratch, and this causes low throughput, high cost and latency bottlenecks. The key to tackling these bottlenecks is to elevate KV cache as a first-class memory layer for agentic systems, allowing the LLMs to reuse their past reasoning instead of recomputing it. I present LMCache, an open-source industry-adopted KV caching library that provides agents with fast, persistent, and addressable AI-native memory across steps, tasks, and model invocations, which dramatically reduces prefill time and GPU cost. I will also highlight the roadmap that brings in more research to industry adoption, in particular, KV cache compression and KV cache blending. Together, they make KV cache much smaller and reusable in many more cases. In short, KV cache is the missing substrate for scalable, efficient, and long-context AI agents, and building KV-aware memory infrastructure will be essential to the next generation of AI systems.
+                </p>
+                <hr>
+                <p>
+                  <b>Bio</b>
+                  <br>
+                  Junchen Jiang is CEO and Co-Founder of Tensormesh, Faculty Lead of LMCache Lab, and Associate Professor of Computer Science at the University of Chicago. He received his PhD degree from Carnegie Mellon University and Bachelor from Tsinghua University. He has received CMU Computer Science Doctoral Dissertation Award (2017), two Google Faculty Research Awards on ML Systems (2018, 2026), an NSF CAREER Award, and multiple best paper awards.
+                </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>2:30 PM - 3:30 PM</time></div>
+              <div class="col-md-10">
+                <h4>Session 3</h4>
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Reimagining LLM Inference Infrastructure with Memory-Centric KV Cache Servers</div>
+                          </div>
+                          <div class="paper-authors">Khyati Kiyawat, Kevin Skadron (University of Virginia)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Data centers are building GPU warehouses to serve a memory problem. As generative AI workloads shift from batch training to interactive, long-context, and agentic inference, the dominant bottleneck has migrated from floating-point throughput to KV cache capacity and bandwidth. Production deployments report KV cache reuse rates of 50&ndash;90% [1], yet infrastructure investments remain anchored to compute-centric accelerators whose memory is expensive, and capacity-limited. We argue that a KV cache server&mdash;disaggregated, CXL-attached memory device(s) with optional near-memory compute&mdash;is the correct infrastructure primitive for the next generation of AI data centers. We propose a spectrum of CXL-attached memory devices&mdash;from CXL DDRx expanders, through CXL-PNM, to CXL-PIM+PNM archetypes&mdash;as the substrate for a KV cache server infrastructure. Our back-of-envelope analysis grounds this vision for cost- and energy-efficient inference. We advocate architecting AI data centers around memory, not FLOPs.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Beyond Compression Ratio: KV Cache Policies in Tiered LLM Infrastructure</div>
+                          </div>
+                          <div class="paper-authors">Devasena Inupakutika, Dongjoo Seo, Swarna Prabhu (Samsung Semiconductor Inc.)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> KV cache compression is now load-bearing in LLM serving, yet most research stops at the algorithm boundary, reporting compression ratio (CR) on isolated prompts under a single-tier cache. Production stacks are multitier, where engine-side compression reshapes storage I/O and mean CR hides three effects: write-volume jitter, broken prefix reuse, and recomputation. Replaying real inference traces through a simulator, we benchmark two engine-involved scorers &ndash; KVZap (content-based learned) and TriAttention (position-based, training-free) &ndash; under fixed, percentile, and adaptive policies &plusmn; a reuse-aware bonus. Prefix preservation spans a 6&times; swing (10% to 61%) on tool/agent, with policy alone lifting a fixed KVZap 10% to 36%; on conversation, CR coefficient of variation swings 1.7&times; (0.21 to 0.12). The two scorers reach high reuse through opposite mechanisms &ndash; position-based preserves prefix by default, content-based evicts it &ndash; invisible at the algorithm-level CR &times; accuracy plot. Compression in tiered serving is an infrastructure design choice, not an algorithmic one.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Is High-Bandwidth Flash All You Need?</div>
+                          </div>
+                          <div class="paper-authors">Vinicius Petrucci, Felippe Zacarias, Vishal Tanna (Micron Technology)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Large language model (LLM) inference accelerators are converging on multi-tier memory to hold multi-terabyte mixture-of-experts (MoE) weights and long-context key-value (KV) state. We use a roofline-based analytical model to compare three augmentations to high-bandwidth memory (HBM): on-package high-bandwidth flash (HBF), on-package LPDDR, and LPDDR over a chip-to-chip (C2C) link to a host CPU. We find that on-package LPDDR matches or beats every alternative at every operating point we evaluate, by up to 5.6&times; over HBM-only, via three properties. (1) <em>Capacity</em>: on-package augmentation admits compact layouts that HBM-only cannot fit; at peak throughput under the latency SLO, HBF and LPDDR both shrink the model-instance footprint 4&times; (16 to 4 GPUs). (2) <em>Writability</em>: LPDDR absorbs KV spill that HBF cannot serve, given NAND's write-rate and endurance limits, yielding up to 2.1&times; over HBF on KV-heavy 1M-context workloads. (3) <em>On-package bandwidth</em>: where C2C carries critical-path traffic, LPDDR's higher effective decode bandwidth yields 1.3&times;&ndash;2.0&times; over C2C. The larger LPDDR-over-C2C gaps are replica-shrink (property (1)): on-package LPDDR can host the cold-expert pool whereas off-package C2C cannot, positioning C2C-attached LPDDR as a KV-overflow rather than expert-offload tier.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>3:30 PM - 4:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Coffee Break</h4>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>4:00 PM - 5:00 PM</time></div>
+              <div class="col-md-10">
+                <h4>Session 4</h4>
+                <ul>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Design Space Exploration for Optimal Silicon-Efficient Server Chiplets</div>
+                          </div>
+                          <div class="paper-authors">Ayan Chakraborty, Ali Ansari, Yuanlong Li, Shanqing Lin, Arunkrishna AMS, Alireza Foroodnia, August Ning (EPFL); Mohammad Alian (Cornell University); Michael Ferdman (Stony Brook University); Pejman Lotfi-Kamran (IPM); Babak Falsafi (EPFL)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Datacenter growth is driving unprecedented demand for both electricity and physical infrastructure. Today's servers typically rely on wide out-of-order (OoO) cores running at high nominal frequencies to meet SLOs, but rising power, silicon, memory, and cooling constraints call for rethinking this design point. We present a methodology for designing power-density-optimized CPU chiplets for server workloads. Our results show that optimal operating frequency can be up to 50% lower for air-cooled systems, and chiplets may favor in-order (InO) cores even for SLO-sensitive services, contrary to conventional trends. Overall, power-density-optimized chiplets improve performance by 1.7&times;&ndash;6.1&times; over conventional out-of-order baseline chiplets.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Store or Recompute? Characterizing the Carbon Implications of KV Cache Retention in LLM Inference</div>
+                          </div>
+                          <div class="paper-authors">Abnash Bassi, Jaylen Wang (Carnegie Mellon University); Fiodar Kazhamiaka, Daniel S. Berger (Microsoft); Akshitha Sriraman (Carnegie Mellon University)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> The growing compute demand of Large Language Model (LLM) inference carries a significant environmental cost. To reduce GPU load, intermediate computation (KV caches) can be saved in non-volatile storage servers and retrieved when the session becomes active. This setup presents a fundamental tradeoff between high power and associated operational carbon emissions of recomputing the KV cache versus the high capacity requirements and embodied carbon emissions of storage. We present a first-order analytical model to identify break-even points between the two choices as a function of storage duration, comparing the embodied carbon of storage hardware against the operational carbon of GPU-based recomputation. We further examine how response time requirements interact with carbon-saving decisions, revealing scenarios where environmentally preferable strategies may conflict with performance needs. Our results demonstrate that the break-even duration varies significantly with different system parameters (e.g., the carbon intensity of the energy source), suggesting opportunities for sustainability-aware retention policies.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Power Breakdowns and PUE Implications of Air-Cooled and Direct-Liquid-Cooled Servers</div>
+                          </div>
+                          <div class="paper-authors">August Ning, Xavier Ouvrard, Babak Falsafi (EPFL)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Power usage <em>effectiveness</em> (PUE) has guided years of datacenter energy efficiency improvements, but only differentiating between facility and IT power obscures insights into how IT power is used within the servers and may misdirect optimizations. In this work, we measure air-cooled and direct liquid-cooled (DLC) servers and break down their power into power supply (PSU) loss, fan, idle, and compute power via power distribution unit (PDU)-level measurements. We apply our insights to show how high ambient temperature operation affects server power profiles and distorts PUE: increasing fan power improves PUE even though energy efficiency may decrease, while transitioning to DLC can worsen PUE despite reducing total datacenter energy consumption.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Schedule Section -->
 
 
 
@@ -763,29 +1107,6 @@
 
 
 
-  <!-- BEGIN of FETCHING PROGRAM SCRIPT -->
-  <script>
-    window.addEventListener('DOMContentLoaded', async () => {
-      const target = document.getElementById('program-include');
-      if (!target) return;
-
-      try {
-        const response = await fetch('program.html');
-        if (!response.ok) {
-          throw new Error(`Failed to load program.html (${response.status})`);
-        }
-
-        target.innerHTML = await response.text();
-
-        if (window.AOS && typeof window.AOS.refreshHard === 'function') {
-          window.AOS.refreshHard();
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    });
-  </script>
-  <!-- END of FETCHING PROGRAM SCRIPT -->
 
 
 

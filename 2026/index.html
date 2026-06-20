@@ -278,16 +278,13 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Beyond Pass/Fail: Evaluating Infrastructure Agents Across Layers, Lifecycle, and Risk</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final71.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Yuan Gao, Zeren Yang, Junnan Li, Shawn (Wanxiang) Zhong (University of Wisconsin-Madison); Ahmed Dajani, Mai Zheng (Iowa State University); Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau (University of Wisconsin-Madison)</div>
                         </div>
                       </summary>
                       <div class="abstract">
                         <p>
-                          <b>Abstract:</b> Managing modern computing infrastructure has become a steadily harder problem due to the ever-increasing complexity. Recent advances in AI agents create a timely opportunity to automate infrastructure management tasks, but it remains unclear how well such agents can handle real-world infrastructure complexity. We present InfraBench, a benchmark suite for evaluating AI agents on realistic infrastructure tasks across the full system stack and full operational lifecycle with fine-grained risk assessment. Preliminary experiments with seven agent&ndash;model configurations show that even the strongest agent cannot secure a full score across all tasks. The mean scores range from 62.5% to 90.5%, and per-check scoring reveals a general failure pattern: agents may routinely satisfy short-term objectives while leaving non-durable changes, broken distributed invariants, unsafe side effects, and uncleaned state behind.
+                          <b>Abstract:</b> Managing modern computing infrastructure has become a steadily harder problem due to the ever-increasing complexity. Recent advances in AI agents create a timely opportunity to automate infrastructure management tasks, but it remains unclear how well such agents can handle real-world infrastructure complexity. We present InfraBench, a benchmark suite for evaluating AI agents on realistic infrastructure tasks across the full system stack and full operational lifecycle with fine-grained risk assessment. Preliminary experiments with seven agent&ndash;model configurations show that even the strongest agent cannot secure a full score across all tasks. The mean scores range from 56.1% to 90.8%, and per-check scoring reveals a general failure pattern: agents may routinely satisfy short-term objectives while leaving non-durable changes, broken distributed invariants, unsafe side effects, and uncleaned state behind.
                         </p>
                       </div>
                     </details>
@@ -298,9 +295,6 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Decision Locality: A Substrate for AI Inference and Continual Learning</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final90.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Jerry Felix (Brain-CA Technologies, Inc.)</div>
                         </div>
@@ -318,16 +312,13 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">When the LLM-Tuned Stack Misses: An Infrastructure View of Biological Foundation Model Inference Across NVIDIA and AMD</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final60.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Manpreet Singh (Embedded LLM)</div>
                         </div>
                       </summary>
                       <div class="abstract">
                         <p>
-                          <b>Abstract:</b> AI inference infrastructure is increasingly tuned for one workload shape: dense, large-batch, NVIDIA-resident transformer decoding for LLMs. Biological foundation models, including protein language models, long-context genomic transformers, and structure-conditioned binders, do not fit that shape. They run at small batch sizes over short alphabets, attend over 100K+ token sequences, mix transformer blocks with geometric ops, and are increasingly deployed on whatever GPU is available, including AMD MI300X. We report a measurement study of six widely used biological models (Meta ESM-2, ProtBERT, ProteinMPNN, DeepMind AlphaGenome, DeepMind Enformer, Nvidia DualBind) on three GPUs spanning two vendors (NVIDIA L4, H100; AMD MI300X). We show that 60-80% of reference-implementation runtime is spent outside dense compute (in memory-bound element-wise ops, fragmented launches, and in one case a host-device round-trip the upstream code never removed), and that a single Triton kernel source tree closes most of the gap on both vendors without per-vendor forks. The results surface three infrastructure observations: (i) the dominant bottlenecks on bio workloads are different from those LLM stacks are tuned for; (ii) vendor-stack asymmetries amplify trivial systems bugs into order-of-magnitude regressions; and (iii) write-once cross-vendor portability for non-LLM AI workloads is achievable today with off-the-shelf compiler infrastructure.
+                          <b>Abstract:</b> AI inference infrastructure is increasingly tuned for one workload shape: dense, large-batch, NVIDIA-resident transformer decoding for LLMs. Biological foundation models, including protein language models, long-context genomic transformers, and structure-conditioned binders, do not fit that shape. They run at small batch sizes over short alphabets, attend over 100K+ token sequences, mix transformer blocks with geometric ops, and are increasingly deployed on whatever GPU is available, including AMD MI300X. We report a measurement study of six widely used biological models (ESM-2, ProtBERT, ProteinMPNN, AlphaGenome, Enformer, DualBind) on three GPUs spanning two vendors (NVIDIA L4, H100; AMD MI300X). We show that 60-80% of reference-implementation runtime is spent outside dense compute (in memory-bound element-wise ops, fragmented launches, and in one case a host-device round-trip the upstream code never removed), and that a single Triton kernel source tree closes most of the gap on both vendors without per-vendor forks. The results surface three infrastructure observations: (i) the dominant bottlenecks on bio workloads are different from those LLM stacks are tuned for; (ii) vendor-stack asymmetries amplify trivial systems bugs into order-of-magnitude regressions; and (iii) write-once cross-vendor portability for non-LLM AI workloads is achievable today with off-the-shelf compiler infrastructure.
                         </p>
                       </div>
                     </details>
@@ -354,9 +345,6 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Safe CPU Oversubscription: One Size Does Not Fit All</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final32.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Jaylen Wang (Carnegie Mellon University); Fiodar Kazhamiaka (Azure Research); Pulkit Misra (Microsoft Research); Daniel Berger (Microsoft Azure &amp; University of Washington); Akshitha Sriraman (Carnegie Mellon University)</div>
                         </div>
@@ -374,9 +362,6 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Overdraft: Graceful Handling of ENOSPC in Multi-Tenant Storage Infrastructure</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final2.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Ahmed Dajani, Wei Xu, Mai Zheng (Iowa State University); Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau (University of Wisconsin-Madison)</div>
                         </div>
@@ -394,9 +379,6 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Speculative Load Micro-op Fusion</div>
-                            <!-- <div class="paper-metadata">
-                              <a href=""><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div> -->
                           </div>
                           <div class="paper-authors">Deepanjali Mishra (Carnegie Mellon University); Tanvir Ahmed Khan (Columbia University in the City of New York); Gilles Pokam (AMD); Heiner Litz (UC Santa Cruz); Akshitha Sriraman (Carnegie Mellon University)</div>
                         </div>
@@ -459,16 +441,13 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Reimagining LLM Inference Infrastructure with Memory-Centric KV Cache Servers</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final59.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Khyati Kiyawat, Kevin Skadron (University of Virginia)</div>
                         </div>
                       </summary>
                       <div class="abstract">
                         <p>
-                          <b>Abstract:</b> Data centers are building GPU warehouses to serve a memory problem. As generative AI workloads shift from batch training to interactive, long-context, and multi-agent inference, the dominant bottleneck has migrated from floating-point throughput to KV cache capacity and bandwidth. Production deployments report KV cache reuse rates of 50&ndash;90% [1], yet infrastructure investments remain anchored to compute-centric accelerators whose memory is expensive, and capacity-limited. We argue that a KV cache server&mdash;disaggregated, CXL-attached memory device(s) with optional near-memory compute&mdash;is the correct infrastructure primitive for the next generation of AI data centers. We propose a spectrum of CXL-attached memory devices&mdash;from CXL DDRx expanders, through CXL-PNM, to CXL-PIM+PNM archetypes&mdash;as the substrate for a KV cache server infrastructure. Back-of-envelope analysis grounds this vision for cost and energy efficient inference. We advocate architecting AI data centers around memory, not FLOPs.
+                          <b>Abstract:</b> Data centers are building GPU warehouses to serve a memory problem. As generative AI workloads shift from batch training to interactive, long-context, and agentic inference, the dominant bottleneck has migrated from floating-point throughput to KV cache capacity and bandwidth. Production deployments report KV cache reuse rates of 50&ndash;90% [1], yet infrastructure investments remain anchored to compute-centric accelerators whose memory is expensive, and capacity-limited. We argue that a KV cache server&mdash;disaggregated, CXL-attached memory device(s) with optional near-memory compute&mdash;is the correct infrastructure primitive for the next generation of AI data centers. We propose a spectrum of CXL-attached memory devices&mdash;from CXL DDRx expanders, through CXL-PNM, to CXL-PIM+PNM archetypes&mdash;as the substrate for a KV cache server infrastructure. Our back-of-envelope analysis grounds this vision for cost- and energy-efficient inference. We advocate architecting AI data centers around memory, not FLOPs.
                         </p>
                       </div>
                     </details>
@@ -479,9 +458,6 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Beyond Compression Ratio: KV Cache Policies in Tiered LLM Infrastructure</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final6.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Devasena Inupakutika, Dongjoo Seo, Swarna Prabhu (Samsung Semiconductor Inc.)</div>
                         </div>
@@ -499,16 +475,13 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Is High-Bandwidth Flash All You Need?</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final83.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Vinicius Petrucci, Felippe Zacarias, Vishal Tanna (Micron Technology)</div>
                         </div>
                       </summary>
                       <div class="abstract">
                         <p>
-                          <b>Abstract:</b> Large language model (LLM) inference accelerators are converging on multi-tier memory to hold multi-terabyte mixture-of-experts (MoE) weights and long-context key-value (KV) state. We use a roofline analytical model to compare three augmentations to high-bandwidth memory (HBM): on-package high-bandwidth flash (HBF), on-package LPDDR, and LPDDR over a chip-to-chip (C2C) link to a host CPU. On-package LPDDR dominates rack throughput at every operating point evaluated, by 1.3&times;&ndash;5.6&times; over HBM-only, via three properties. (1) <em>Capacity</em>: on-package augmentation admits compact layouts HBM-only cannot fit; at peak, HBF and LPDDR both shrink the model-instance footprint 4&times; (16 to 4 GPUs). (2) <em>Writability</em>: LPDDR absorbs KV spill HBF cannot serve under NAND's write-rate and endurance limits, yielding up to 2.2&times; over HBF on KV-heavy 1M-context workloads. (3) <em>On-package bandwidth</em>: LPDDR's higher effective bandwidth than C2C under scattered decode access yields 1.2&times;&ndash;5.6&times;, positioning C2C-attached LPDDR as a KV-overflow tier rather than expert-offload target.
+                          <b>Abstract:</b> Large language model (LLM) inference accelerators are converging on multi-tier memory to hold multi-terabyte mixture-of-experts (MoE) weights and long-context key-value (KV) state. We use a roofline-based analytical model to compare three augmentations to high-bandwidth memory (HBM): on-package high-bandwidth flash (HBF), on-package LPDDR, and LPDDR over a chip-to-chip (C2C) link to a host CPU. We find that on-package LPDDR matches or beats every alternative at every operating point we evaluate, by up to 5.6&times; over HBM-only, via three properties. (1) <em>Capacity</em>: on-package augmentation admits compact layouts that HBM-only cannot fit; at peak throughput under the latency SLO, HBF and LPDDR both shrink the model-instance footprint 4&times; (16 to 4 GPUs). (2) <em>Writability</em>: LPDDR absorbs KV spill that HBF cannot serve, given NAND's write-rate and endurance limits, yielding up to 2.1&times; over HBF on KV-heavy 1M-context workloads. (3) <em>On-package bandwidth</em>: where C2C carries critical-path traffic, LPDDR's higher effective decode bandwidth yields 1.3&times;&ndash;2.0&times; over C2C. The larger LPDDR-over-C2C gaps are replica-shrink (property (1)): on-package LPDDR can host the cold-expert pool whereas off-package C2C cannot, positioning C2C-attached LPDDR as a KV-overflow rather than expert-offload tier.
                         </p>
                       </div>
                     </details>
@@ -535,9 +508,6 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Design Space Exploration for Optimal Silicon-Efficient Server Chiplets</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final96.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Ayan Chakraborty, Ali Ansari, Yuanlong Li, Shanqing Lin, Arunkrishna AMS, Alireza Foroodnia, August Ning (EPFL); Mohammad Alian (Cornell University); Michael Ferdman (Stony Brook University); Pejman Lotfi-Kamran (IPM); Babak Falsafi (EPFL)</div>
                         </div>
@@ -555,9 +525,6 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Store or Recompute? Characterizing the Carbon Implications of KV Cache Retention in LLM Inference</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final30.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">Abnash Bassi, Jaylen Wang (Carnegie Mellon University); Fiodar Kazhamiaka, Daniel S. Berger (Microsoft); Akshitha Sriraman (Carnegie Mellon University)</div>
                         </div>
@@ -575,16 +542,13 @@
                         <div style="display: block; width: 100%;">
                           <div>
                             <div class="paper-title">Power Breakdowns and PUE Implications of Air-Cooled and Direct-Liquid-Cooled Servers</div>
-                            <div class="paper-metadata">
-                              <a href="./papers/hotinfra26-final91.pdf"><i title="Paper" class="bi bi-file-earmark-text"></i></a>
-                            </div>
                           </div>
                           <div class="paper-authors">August Ning, Xavier Ouvrard, Babak Falsafi (EPFL)</div>
                         </div>
                       </summary>
                       <div class="abstract">
                         <p>
-                          <b>Abstract:</b> Power usage <em>effectiveness</em> (PUE) has guided years of datacenter energy efficiency improvements, but only differentiating between facility and IT power obscures insights into how IT power is used within the servers and may misguided optimizations. In this work, we measure air-cooled and direct liquid-cooled (DLC) servers and break down their power into power supply (PSU) loss, fan, idle, and compute power via power distribution unit (PDU)-level measurements. We apply our insights to show how high ambient temperatures operation affects server power profiles and distorts PUE: increasing fan power improves PUE even though energy efficiency may decrease, while transitioning to DLC can worsen PUE despite reducing total datacenter energy consumption.
+                          <b>Abstract:</b> Power usage <em>effectiveness</em> (PUE) has guided years of datacenter energy efficiency improvements, but only differentiating between facility and IT power obscures insights into how IT power is used within the servers and may misdirect optimizations. In this work, we measure air-cooled and direct liquid-cooled (DLC) servers and break down their power into power supply (PSU) loss, fan, idle, and compute power via power distribution unit (PDU)-level measurements. We apply our insights to show how high ambient temperature operation affects server power profiles and distorts PUE: increasing fan power improves PUE even though energy efficiency may decrease, while transitioning to DLC can worsen PUE despite reducing total datacenter energy consumption.
                         </p>
                       </div>
                     </details>

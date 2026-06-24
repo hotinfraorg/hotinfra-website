@@ -382,22 +382,14 @@
                       <summary>
                         <div style="display: block; width: 100%;">
                           <div>
-                            <div class="paper-title">Speculative Load Micro-op Fusion</div>
+                            <div class="paper-title">Design Space Exploration for Optimal Silicon-Efficient Server Chiplets</div>
                           </div>
-                          <div class="paper-authors">Deepanjali Mishra (Carnegie Mellon University); Tanvir Ahmed Khan (Columbia University in the City of New York); Gilles Pokam (AMD); Heiner Litz (UC Santa Cruz); Akshitha Sriraman (Carnegie Mellon University)</div>
+                          <div class="paper-authors">Ayan Chakraborty, Ali Ansari, Yuanlong Li, Shanqing Lin, Arunkrishna AMS, Alireza Foroodnia, August Ning (EPFL); Mohammad Alian (Cornell University); Michael Ferdman (Stony Brook University); Pejman Lotfi-Kamran (IPM); Babak Falsafi (EPFL)</div>
                         </div>
                       </summary>
                       <div class="abstract">
                         <p>
-                          <b>Abstract:</b> Modern data center applications experience significant backend pipeline stalls, degrading performance and energy efficiency. One promising approach to reduce these stalls is load micro-op pair fusion, where two load micro-ops accessing the same cache line are merged into a single fused micro-op. However, existing approaches require both load micro-ops to be simultaneously visible before fusion can occur, limiting fusion coverage.
-                        </p>
-                        <br>
-                        <p>
-                          We present I-Fuse, a profile-guided speculative load micro-op pair fusion mechanism. I-Fuse consists of two components: (1) profile-guided fusion, which identifies fusible load pairs using dynamic execution profiles, and (2) speculative fusion, which enables fusion when only the first load has been observed.
-                        </p>
-                        <br>
-                        <p>
-                          We evaluate I-Fuse using eight backend-bound data center applications. I-Fuse improves performance by 7.4% over a system without fusion and outperforms the state-of-the-art fusion technique, Helios, by 6.8&times;. I-Fuse achieves 78.9% of ideal speedup on average, and up to 97.9%.
+                          <b>Abstract:</b> Datacenter growth is driving unprecedented demand for both electricity and physical infrastructure. Today's servers typically rely on wide out-of-order (OoO) cores running at high nominal frequencies to meet SLOs, but rising power, silicon, memory, and cooling constraints call for rethinking this design point. We present a methodology for designing power-density-optimized CPU chiplets for server workloads. Our results show that optimal operating frequency can be up to 50% lower for air-cooled systems, and chiplets may favor in-order (InO) cores even for SLO-sensitive services, contrary to conventional trends. Overall, power-density-optimized chiplets improve performance by 1.7&times;&ndash;6.1&times; over conventional out-of-order baseline chiplets.
                         </p>
                       </div>
                     </details>
@@ -511,23 +503,6 @@
                       <summary>
                         <div style="display: block; width: 100%;">
                           <div>
-                            <div class="paper-title">Design Space Exploration for Optimal Silicon-Efficient Server Chiplets</div>
-                          </div>
-                          <div class="paper-authors">Ayan Chakraborty, Ali Ansari, Yuanlong Li, Shanqing Lin, Arunkrishna AMS, Alireza Foroodnia, August Ning (EPFL); Mohammad Alian (Cornell University); Michael Ferdman (Stony Brook University); Pejman Lotfi-Kamran (IPM); Babak Falsafi (EPFL)</div>
-                        </div>
-                      </summary>
-                      <div class="abstract">
-                        <p>
-                          <b>Abstract:</b> Datacenter growth is driving unprecedented demand for both electricity and physical infrastructure. Today's servers typically rely on wide out-of-order (OoO) cores running at high nominal frequencies to meet SLOs, but rising power, silicon, memory, and cooling constraints call for rethinking this design point. We present a methodology for designing power-density-optimized CPU chiplets for server workloads. Our results show that optimal operating frequency can be up to 50% lower for air-cooled systems, and chiplets may favor in-order (InO) cores even for SLO-sensitive services, contrary to conventional trends. Overall, power-density-optimized chiplets improve performance by 1.7&times;&ndash;6.1&times; over conventional out-of-order baseline chiplets.
-                        </p>
-                      </div>
-                    </details>
-                  </li>
-                  <li>
-                    <details>
-                      <summary>
-                        <div style="display: block; width: 100%;">
-                          <div>
                             <div class="paper-title">Store or Recompute? Characterizing the Carbon Implications of KV Cache Retention in LLM Inference</div>
                           </div>
                           <div class="paper-authors">Abnash Bassi, Jaylen Wang (Carnegie Mellon University); Fiodar Kazhamiaka, Daniel S. Berger (Microsoft); Akshitha Sriraman (Carnegie Mellon University)</div>
@@ -553,6 +528,31 @@
                       <div class="abstract">
                         <p>
                           <b>Abstract:</b> Power usage <em>effectiveness</em> (PUE) has guided years of datacenter energy efficiency improvements, but only differentiating between facility and IT power obscures insights into how IT power is used within the servers and may misdirect optimizations. In this work, we measure air-cooled and direct liquid-cooled (DLC) servers and break down their power into power supply (PSU) loss, fan, idle, and compute power via power distribution unit (PDU)-level measurements. We apply our insights to show how high ambient temperature operation affects server power profiles and distorts PUE: increasing fan power improves PUE even though energy efficiency may decrease, while transitioning to DLC can worsen PUE despite reducing total datacenter energy consumption.
+                        </p>
+                      </div>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>
+                        <div style="display: block; width: 100%;">
+                          <div>
+                            <div class="paper-title">Speculative Load Micro-op Fusion</div>
+                          </div>
+                          <div class="paper-authors">Deepanjali Mishra (Carnegie Mellon University); Tanvir Ahmed Khan (Columbia University in the City of New York); Gilles Pokam (AMD); Heiner Litz (UC Santa Cruz); Akshitha Sriraman (Carnegie Mellon University)</div>
+                        </div>
+                      </summary>
+                      <div class="abstract">
+                        <p>
+                          <b>Abstract:</b> Modern data center applications experience significant backend pipeline stalls, degrading performance and energy efficiency. One promising approach to reduce these stalls is load micro-op pair fusion, where two load micro-ops accessing the same cache line are merged into a single fused micro-op. However, existing approaches require both load micro-ops to be simultaneously visible before fusion can occur, limiting fusion coverage.
+                        </p>
+                        <br>
+                        <p>
+                          We present I-Fuse, a profile-guided speculative load micro-op pair fusion mechanism. I-Fuse consists of two components: (1) profile-guided fusion, which identifies fusible load pairs using dynamic execution profiles, and (2) speculative fusion, which enables fusion when only the first load has been observed.
+                        </p>
+                        <br>
+                        <p>
+                          We evaluate I-Fuse using eight backend-bound data center applications. I-Fuse improves performance by 7.4% over a system without fusion and outperforms the state-of-the-art fusion technique, Helios, by 6.8&times;. I-Fuse achieves 78.9% of ideal speedup on average, and up to 97.9%.
                         </p>
                       </div>
                     </details>
